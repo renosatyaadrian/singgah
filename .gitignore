@@ -63,6 +63,12 @@ artifacts/
 .env.test.local
 .env.production.local
 
+# ASP.NET Configuration (contains sensitive data)
+appsettings.Development.json
+appsettings.Production.json
+!appsettings.Development.example.json
+!appsettings.Production.example.json
+
 # OS
 .DS_Store
 Thumbs.db
