@@ -8,7 +8,7 @@ filter kategori, copy review ke Google Maps.
 
 **Stack:**
 - Frontend : Next.js 14 (Vercel)
-- Backend  : .NET 8 Web API (AWS EC2 t2.micro, ap-southeast-1)
+- Backend  : .NET 10 Web API (AWS EC2 t2.micro, ap-southeast-1)
 - Database : AWS RDS PostgreSQL (db.t3.micro)
 - Storage  : AWS S3 bucket singgah-photos
 - Auth     : Google OAuth + JWT httpOnly cookie via NextAuth.js
@@ -30,7 +30,7 @@ filter kategori, copy review ke Google Maps.
    npx create-next-app@latest frontend --typescript --tailwind --app --src-dir
    (parallel step 5)
 
-5. Init .NET 8 Web API:
+5. Init .NET 10 Web API:
    dotnet new webapi -n Singgah.API
    Buat folder: Controllers/ Services/ Repositories/ Models/ DTOs/
    (parallel step 4)
@@ -168,7 +168,7 @@ semua mutation dengan optimistic updates
 
 ## Phase 4 — Deployment
 
-21. backend/Dockerfile multi-stage: sdk:8.0 build → aspnet:8.0 runtime
+21. backend/Dockerfile multi-stage: sdk:10.0 build → aspnet:10.0 runtime
 22. EC2: Docker + Nginx reverse proxy port 5000 + SSL Certbot
 23. S3 CORS policy: allow PUT dari Vercel domain
 24. Vercel env vars:

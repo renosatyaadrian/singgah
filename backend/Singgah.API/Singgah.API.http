@@ -1,0 +1,6 @@
+@Singgah.API_HostAddress = http://localhost:5139
+
+GET {{Singgah.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

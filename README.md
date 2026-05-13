@@ -22,7 +22,7 @@ Web app untuk mendokumentasikan tempat dan makanan yang dikunjungi.
 - shadcn/ui
 
 **Backend:**
-- .NET 8 Web API
+- .NET 10 Web API
 - Entity Framework Core
 - PostgreSQL
 - AWS S3 (photo storage)
